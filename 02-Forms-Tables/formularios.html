@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="resultados.html" method="GET">
+      <!--post envía a resultados.html para que éste haga algo. Se usa cuando una acción se hace desde un servidor-->
+      <!--Enlace a dónde quiero enviar el formulario-->
+      <div>
+        <label for="nombreUsuario">Nombre de usuario</label>
+        <input type="text" name="nombreUsuario" id="nombreUsuario" required />
+      </div>
+      <br />
+      <div>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <br />
+      <div>
+        <label for="nacimiento">Cuál es tu email?</label>
+        <input type="date" name="nacimiento" id="nacimiento" />
+      </div>
+      <br />
+      <div>
+        <label for="edad">Cuál es tu fecha de nacimiento?</label>
+        <input type="number" name="edad" id="edad" min="0" max="100" required />
+      </div>
+      <br />
+      <div>
+        <label for="edad">Cuál es tu edad?</label>
+        <input type="number" name="edad" id="edad" min="0" max="100" required />
+      </div>
+      <br />
+      <div>
+        <label for="comentarios">Comentarios</label>
+        <textarea name="comentarios" id="comentarios"></textarea>
+      </div>
+      <br />
+      <button type="reset">Reset</button>
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
